@@ -1,5 +1,4 @@
 require('lsp-zero')
-require('lspconfig').lua_ls.setup({})
 
 local lsp = require('lsp-zero')
 
@@ -11,6 +10,9 @@ end)
 
 -- here you can setup the language servers
 require('lspconfig').gopls.setup({})
+require('lspconfig').lua_ls.setup({})
+require('lspconfig').phpactor.setup({})
+require('lspconfig').ruby_ls.setup({})
 
 -- autocomplete
 local cmp = require('cmp')
